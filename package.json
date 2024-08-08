@@ -1,0 +1,16 @@
+{
+  "name": "writeme",
+  "version": "1.0.0",
+  "description": "Application for writers of books, novels, short stories, etc. to have a place to create their stories and help other people with their projects.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
