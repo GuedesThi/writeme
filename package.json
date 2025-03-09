@@ -1,24 +1,24 @@
 {
   "name": "writeme",
-  "version": "1.0.0",
-  "description": "Application for writers of books, novels, short stories, etc. to have a place to create their stories and help other people with their projects.",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
-    "lint:check": "prettier --check .",
-    "lint:fix": "prettier --write .",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "next": "^13.1.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "15.1.6"
   },
   "devDependencies": {
-    "jest": "^29.6.2",
-    "prettier": "^3.3.3"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }
