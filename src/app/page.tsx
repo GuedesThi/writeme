@@ -1,5 +1,4 @@
 import Card from "@/components/Card";
-import styles from "./page.module.css";
 import { EB_Garamond, Poppins } from "next/font/google";
 
 // className={`${poppins.className} font-normal`}
@@ -45,7 +44,7 @@ export default function Home() {
       {/* Opções inicial */}
       <div className="flex md:flex-row max-md:flex-col items-center justify-center gap-12 pt-16 px-5">
         <Card
-          pathUrl="/create-book"
+          pathUrl="/create"
           imageUrl="/icon-plus.png"
           content="Escrever algo"
         />
