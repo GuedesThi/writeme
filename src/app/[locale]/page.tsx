@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import { EB_Garamond, Poppins } from "next/font/google";
+import { useTranslations } from "next-intl";
 
 // className={`${poppins.className} font-normal`}
 
@@ -16,6 +17,7 @@ const ebGaramond = EB_Garamond({
 });
 
 export default function Home() {
+  const t = useTranslations("HomePage");
   return (
     <div className="p-[60px]">
       {/* Cabeçalho */}
@@ -23,7 +25,7 @@ export default function Home() {
         <h1
           className={`${poppins.className} font-light italic md:text-[27px] max-md:text-[17px]`}
         >
-          writeme.com.br
+          {t("title")}
         </h1>
       </div>
 
@@ -32,7 +34,7 @@ export default function Home() {
         <p
           className={`${ebGaramond.className} md:text-[27px] max-md:text-[20px]`}
         >
-          "Do mundo pra mente, da mente pras páginas, das páginas pro mundo",
+          "{t("message")}"
         </p>
         <p
           className={`${ebGaramond.className} font-light md:text-[27px] max-md:text-[20px]`}
@@ -46,13 +48,13 @@ export default function Home() {
         <Card
           pathUrl="/create"
           imageUrl="/icon-plus.png"
-          content="Escrever algo"
+          content={t("btnCreate")}
         />
-        <Card pathUrl="/lib" imageUrl="/icon-book.png" content="Minhas obras" />
+        <Card pathUrl="/lib" imageUrl="/icon-book.png" content={t("btnLib")} />
         <Card
           pathUrl="/account"
           imageUrl="/icon-profile.png"
-          content="Acessar sua conta"
+          content={t("btnAccount")}
         />
       </div>
     </div>
