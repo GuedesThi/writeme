@@ -32,7 +32,7 @@ export default function Home() {
       {/* Frase inicial */}
       <div className="flex flex-col justify-center items-center pt-20">
         <p
-          className={`${ebGaramond.className} md:text-[27px] max-md:text-[20px]`}
+          className={`${ebGaramond.className} md:text-[27px] max-md:text-[20px] text-center`}
         >
           "{t("message")}"
         </p>
