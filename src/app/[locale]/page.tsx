@@ -46,11 +46,15 @@ export default function Home() {
       {/* Opções inicial */}
       <div className="flex md:flex-row max-md:flex-col items-center justify-center gap-12 pt-16 px-5">
         <Card
-          pathUrl="/create"
+          pathUrl="/account/new-project"
           imageUrl="/icon-plus.png"
           content={t("btnCreate")}
         />
-        <Card pathUrl="/lib" imageUrl="/icon-book.png" content={t("btnLib")} />
+        <Card
+          pathUrl="/account/library"
+          imageUrl="/icon-book.png"
+          content={t("btnLib")}
+        />
         <Card
           pathUrl="/account"
           imageUrl="/icon-profile.png"
